@@ -1,0 +1,5 @@
+com/eurodyn/qlack2/fuse/workflow/runtime/api/CustomUserGroupCallback.class
+com/eurodyn/qlack2/fuse/workflow/runtime/api/WorkflowRuntimeService.class
+com/eurodyn/qlack2/fuse/workflow/runtime/api/dto/ProcessInstanceDesc.class
+com/eurodyn/qlack2/fuse/workflow/runtime/api/dto/TaskSummary.class
+com/eurodyn/qlack2/fuse/workflow/runtime/api/QWorkflowRuntimeException.class

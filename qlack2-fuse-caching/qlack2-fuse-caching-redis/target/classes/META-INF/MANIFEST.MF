@@ -1,0 +1,21 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1480334145217
+Build-Jdk: 1.8.0_102
+Built-By: nassos
+Bundle-Blueprint: OSGI-INF/blueprint/blueprint.xml
+Bundle-Description: QLACK2 :: Fuse :: Caching :: redis
+Bundle-ManifestVersion: 2
+Bundle-Name: qlack2-fuse-caching-redis
+Bundle-SymbolicName: com.eurodyn.qlack2.fuse.qlack2-fuse-caching-redis
+Bundle-Version: 2.0.0.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+Import-Package: com.eurodyn.qlack2.fuse.caching.api;version="[2.0,3)",co
+ m.eurodyn.qlack2.fuse.caching.redis.api,com.google.common.base;version=
+ "[18.0,19)",com.google.common.collect;version="[18.0,19)",org.apache.co
+ mmons.pool2.impl;version="[2.3,3)",org.osgi.service.blueprint;version="
+ [1.0.0,2.0.0)",redis.clients.jedis;version="[2.7,3)",org.apache.felix.s
+ ervice.command
+Include-Resource: {OSGI-INF/blueprint/blueprint.xml=src/main/resources/O
+ SGI-INF/blueprint/blueprint.xml},target/classes/rebel.xml
+Private-Package: com.eurodyn.qlack2.fuse.caching.redis.impl
+Tool: Bnd-3.2.0.201605172007

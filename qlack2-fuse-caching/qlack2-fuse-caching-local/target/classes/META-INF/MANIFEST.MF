@@ -1,0 +1,23 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1480334145619
+Build-Jdk: 1.8.0_102
+Built-By: nassos
+Bundle-Blueprint: OSGI-INF/blueprint/blueprint.xml
+Bundle-Description: QLACK2 :: Fuse :: Caching :: local
+Bundle-ManifestVersion: 2
+Bundle-Name: qlack2-fuse-caching-local
+Bundle-SymbolicName: com.eurodyn.qlack2.fuse.qlack2-fuse-caching-local
+Bundle-Version: 2.0.0.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+Export-Package: com.eurodyn.qlack2.fuse.caching.local;uses:="com.eurodyn
+ .qlack2.fuse.caching.api";version="2.0.0.SNAPSHOT"
+Import-Package: com.eurodyn.qlack2.fuse.caching.api;version="[2.0,3)",co
+ m.eurodyn.qlack2.fuse.caching.local.impl,com.eurodyn.qlack2.fuse.cachin
+ g.memcached.api,com.google.common.base;version="[18.0,19)",com.google.c
+ ommon.cache;version="[18.0,19)",com.google.common.collect;version="[18.
+ 0,19)",org.osgi.service.blueprint;version="[1.0.0,2.0.0)",org.apache.fe
+ lix.service.command
+Include-Resource: {OSGI-INF/blueprint/blueprint.xml=src/main/resources/O
+ SGI-INF/blueprint/blueprint.xml},target/classes/rebel.xml
+Private-Package: com.eurodyn.qlack2.fuse.caching.local
+Tool: Bnd-3.2.0.201605172007

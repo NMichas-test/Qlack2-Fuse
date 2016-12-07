@@ -1,0 +1,12 @@
+/Users/nassos/Projects/Qlack2-2.x/Qlack2-Fuse/qlack2-fuse-rules-runtime/qlack2-fuse-rules-runtime-impl/src/main/java/com/eurodyn/qlack2/fuse/rules/impl/JarClassLoaderBuilder.java
+/Users/nassos/Projects/Qlack2-2.x/Qlack2-Fuse/qlack2-fuse-rules-runtime/qlack2-fuse-rules-runtime-impl/src/main/java/com/eurodyn/qlack2/fuse/rules/impl/model/RuntimeBaseState.java
+/Users/nassos/Projects/Qlack2-2.x/Qlack2-Fuse/qlack2-fuse-rules-runtime/qlack2-fuse-rules-runtime-impl/src/main/java/com/eurodyn/qlack2/fuse/rules/impl/ClassLoaderKnowledgeSession.java
+/Users/nassos/Projects/Qlack2-2.x/Qlack2-Fuse/qlack2-fuse-rules-runtime/qlack2-fuse-rules-runtime-impl/src/main/java/com/eurodyn/qlack2/fuse/rules/impl/PrefixNamingStrategy.java
+/Users/nassos/Projects/Qlack2-2.x/Qlack2-Fuse/qlack2-fuse-rules-runtime/qlack2-fuse-rules-runtime-impl/src/main/java/com/eurodyn/qlack2/fuse/rules/impl/bootstrap/Bootstrap.java
+/Users/nassos/Projects/Qlack2-2.x/Qlack2-Fuse/qlack2-fuse-rules-runtime/qlack2-fuse-rules-runtime-impl/src/main/java/com/eurodyn/qlack2/fuse/rules/impl/ClassLoaderKnowledgeBase.java
+/Users/nassos/Projects/Qlack2-2.x/Qlack2-Fuse/qlack2-fuse-rules-runtime/qlack2-fuse-rules-runtime-impl/src/main/java/com/eurodyn/qlack2/fuse/rules/impl/model/RuntimeGlobal.java
+/Users/nassos/Projects/Qlack2-2.x/Qlack2-Fuse/qlack2-fuse-rules-runtime/qlack2-fuse-rules-runtime-impl/src/main/java/com/eurodyn/qlack2/fuse/rules/impl/model/RuntimeSession.java
+/Users/nassos/Projects/Qlack2-2.x/Qlack2-Fuse/qlack2-fuse-rules-runtime/qlack2-fuse-rules-runtime-impl/src/main/java/com/eurodyn/qlack2/fuse/rules/impl/RulesRuntimeServiceImpl.java
+/Users/nassos/Projects/Qlack2-2.x/Qlack2-Fuse/qlack2-fuse-rules-runtime/qlack2-fuse-rules-runtime-impl/src/main/java/com/eurodyn/qlack2/fuse/rules/impl/Utils.java
+/Users/nassos/Projects/Qlack2-2.x/Qlack2-Fuse/qlack2-fuse-rules-runtime/qlack2-fuse-rules-runtime-impl/src/main/java/com/eurodyn/qlack2/fuse/rules/impl/MapBackedClassLoader.java
+/Users/nassos/Projects/Qlack2-2.x/Qlack2-Fuse/qlack2-fuse-rules-runtime/qlack2-fuse-rules-runtime-impl/src/main/java/com/eurodyn/qlack2/fuse/rules/impl/model/RuntimeBaseLibrary.java

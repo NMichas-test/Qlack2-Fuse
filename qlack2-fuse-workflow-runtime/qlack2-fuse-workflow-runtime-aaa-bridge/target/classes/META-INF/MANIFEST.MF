@@ -1,0 +1,23 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1480334187742
+Build-Jdk: 1.8.0_102
+Built-By: nassos
+Bundle-Blueprint: OSGI-INF/blueprint/blueprint.xml
+Bundle-Description: QLACK2 :: Fuse :: workflow runtime :: AAA bridge
+Bundle-ManifestVersion: 2
+Bundle-Name: qlack2-fuse-workflow-runtime-aaa-bridge
+Bundle-SymbolicName: com.eurodyn.qlack2.fuse.qlack2-fuse-workflow-runtim
+ e-aaa-bridge
+Bundle-Version: 2.0.0.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+Export-Package: com.eurodyn.qlack2.fuse.workflow.runtime.aaa.bridge;uses
+ :="com.eurodyn.qlack2.fuse.aaa.api,com.eurodyn.qlack2.fuse.workflow.run
+ time.api";version="2.0.0.SNAPSHOT"
+Import-Package: com.eurodyn.qlack2.fuse.aaa.api;version="[2.0,3)",com.eu
+ rodyn.qlack2.fuse.aaa.api.dto;version="[2.0,3)",com.eurodyn.qlack2.fuse
+ .workflow.runtime.api;version="[2.0,3)",org.osgi.service.blueprint;vers
+ ion="[1.0.0,2.0.0)"
+Include-Resource: {OSGI-INF/blueprint/blueprint.xml=src/main/resources/O
+ SGI-INF/blueprint/blueprint.xml},target/classes/rebel.xml
+Private-Package: com.eurodyn.qlack2.fuse.workflow.runtime.aaa.bridge
+Tool: Bnd-3.2.0.201605172007

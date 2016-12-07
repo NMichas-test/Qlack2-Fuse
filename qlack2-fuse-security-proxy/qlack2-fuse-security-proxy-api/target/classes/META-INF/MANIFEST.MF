@@ -1,0 +1,27 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1480334194384
+Build-Jdk: 1.8.0_102
+Built-By: nassos
+Bundle-Description: Helpers for integrating IDM (and AAA) with front-end
+  applications - API
+Bundle-ManifestVersion: 2
+Bundle-Name: qlack2-fuse-security-proxy-api
+Bundle-SymbolicName: com.eurodyn.qlack2.fuse.qlack2-fuse-security-proxy-
+ api
+Bundle-Version: 2.0.0.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+Export-Package: com.eurodyn.qlack2.fuse.security.proxy.api.dto;version="
+ 2.0.0.SNAPSHOT",com.eurodyn.qlack2.fuse.security.proxy.api;uses:="com.e
+ urodyn.qlack2.fuse.aaa.api.dto,com.eurodyn.qlack2.fuse.idm.api.request,
+ com.eurodyn.qlack2.fuse.idm.api.response,com.eurodyn.qlack2.fuse.securi
+ ty.proxy.api.dto,javax.ws.rs,javax.ws.rs.core,org.apache.cxf.rs.securit
+ y.cors";version="2.0.0.SNAPSHOT"
+Import-Package: com.eurodyn.qlack2.fuse.aaa.api.dto;version="[2.0,3)",co
+ m.eurodyn.qlack2.fuse.idm.api.request;version="[2.0,3)",com.eurodyn.qla
+ ck2.fuse.idm.api.response;version="[2.0,3)",com.eurodyn.qlack2.fuse.sec
+ urity.proxy.api.dto,javax.ws.rs;version="[2.0,3)",javax.ws.rs.core;vers
+ ion="[2.0,3)",org.apache.cxf.rs.security.cors;version="[3.1,4)"
+Include-Resource: ,target/classes/rebel.xml
+Private-Package: com.eurodyn.qlack2.fuse.security.proxy.api.dto,com.euro
+ dyn.qlack2.fuse.security.proxy.api
+Tool: Bnd-3.2.0.201605172007

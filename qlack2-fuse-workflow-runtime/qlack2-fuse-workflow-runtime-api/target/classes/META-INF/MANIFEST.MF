@@ -1,0 +1,22 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1480334181102
+Build-Jdk: 1.8.0_102
+Built-By: nassos
+Bundle-Description: QLACK2 :: Fuse :: Workflow runtime :: api
+Bundle-ManifestVersion: 2
+Bundle-Name: qlack2-fuse-workflow-runtime-api
+Bundle-SymbolicName: com.eurodyn.qlack2.fuse.qlack2-fuse-workflow-runtim
+ e-api
+Bundle-Version: 2.0.0.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+Export-Package: com.eurodyn.qlack2.fuse.workflow.runtime.api;uses:="com.
+ eurodyn.qlack2.common.util.exception,com.eurodyn.qlack2.fuse.workflow.r
+ untime.api.dto,org.kie.api.task";version="2.0.0.SNAPSHOT",com.eurodyn.q
+ lack2.fuse.workflow.runtime.api.dto;version="2.0.0.SNAPSHOT"
+Import-Package: com.eurodyn.qlack2.common.util.exception;version="[1.0,2
+ )",com.eurodyn.qlack2.fuse.workflow.runtime.api.dto,org.kie.api.task;ve
+ rsion="[6.2,7)"
+Include-Resource: ,target/classes/rebel.xml
+Private-Package: com.eurodyn.qlack2.fuse.workflow.runtime.api,com.eurody
+ n.qlack2.fuse.workflow.runtime.api.dto
+Tool: Bnd-3.2.0.201605172007
