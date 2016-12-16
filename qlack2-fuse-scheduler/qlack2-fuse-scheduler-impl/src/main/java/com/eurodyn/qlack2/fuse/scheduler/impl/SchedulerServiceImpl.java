@@ -15,7 +15,9 @@
 package com.eurodyn.qlack2.fuse.scheduler.impl;
 
 import java.text.ParseException;
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 import java.util.logging.Level;
@@ -23,6 +25,7 @@ import java.util.logging.Logger;
 
 import org.quartz.JobDataMap;
 import org.quartz.JobDetail;
+import org.quartz.JobExecutionContext;
 import org.quartz.JobKey;
 import org.quartz.SchedulerException;
 import org.quartz.Trigger;
@@ -429,4 +432,30 @@ public class SchedulerServiceImpl implements SchedulerService {
 		}
 	}
 	
+	@Override
+	public boolean checkExistTrigger(String triggerName, String triggerGroup){
+		try {
+			return schedulerProvider.getScheduler().checkExists(TriggerKey.triggerKey(triggerName, triggerGroup));
+		} catch (SchedulerException ex) {
+			throw new QSchedulerException(ex);
+		}
+	}
+	
+	@Override
+	public List<String> getCurrentlyExecutingJobsNames(){
+		List<String> names = null;
+		try {
+			List<JobExecutionContext> runningJobs = schedulerProvider.getScheduler().getCurrentlyExecutingJobs();
+			
+			names = new ArrayList<String>();
+			
+			for (JobExecutionContext runningJob : runningJobs){
+				names.add(runningJob.getJobDetail().getKey().getName().toString());
+			}
+		} catch (SchedulerException ex) {
+			throw new QSchedulerException(ex);
+		}
+		
+		return names;
+	}
 }

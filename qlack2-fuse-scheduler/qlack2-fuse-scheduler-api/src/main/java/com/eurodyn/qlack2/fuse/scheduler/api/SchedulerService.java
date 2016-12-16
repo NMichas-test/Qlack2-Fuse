@@ -15,6 +15,7 @@
 package com.eurodyn.qlack2.fuse.scheduler.api;
 
 import java.util.Date;
+import java.util.List;
 import java.util.Map;
 
 import com.eurodyn.qlack2.fuse.scheduler.api.dto.TriggerDateInfo;
@@ -225,5 +226,19 @@ public interface SchedulerService {
 	 */
 	public boolean checkExistJob(String jobName, String jobGroup);
 	
-
+	/**
+	 * Checks if a trigger already exists in scheduler
+	 * 
+	 * @param triggerName
+	 * @param triggerGroup
+	 * @return
+	 */
+	public boolean checkExistTrigger(String triggerName, String triggerGroup);
+	
+	/**
+	 * Gets current executing jobs' names 
+	 * 
+	 * @return
+	 */
+	public List<String> getCurrentlyExecutingJobsNames();
 }
