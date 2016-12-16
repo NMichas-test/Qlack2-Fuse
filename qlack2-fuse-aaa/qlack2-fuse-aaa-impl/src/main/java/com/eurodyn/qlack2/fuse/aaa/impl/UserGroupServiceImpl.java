@@ -14,24 +14,26 @@
 */
 package com.eurodyn.qlack2.fuse.aaa.impl;
 
-import com.eurodyn.qlack2.fuse.aaa.api.JSONConfigService;
-import com.eurodyn.qlack2.fuse.aaa.api.UserGroupService;
-import com.eurodyn.qlack2.fuse.aaa.api.dto.GroupDTO;
-import com.eurodyn.qlack2.fuse.aaa.api.exception.QInvalidGroupHierarchyException;
-import com.eurodyn.qlack2.fuse.aaa.impl.model.Group;
-import com.eurodyn.qlack2.fuse.aaa.impl.model.User;
-import com.eurodyn.qlack2.fuse.aaa.impl.util.ConverterUtil;
-import org.ops4j.pax.cdi.api.OsgiServiceProvider;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
 
 import javax.inject.Singleton;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.persistence.Query;
 import javax.transaction.Transactional;
-import javax.transaction.Transactional.TxType;
-import java.util.*;
 
-import static com.eurodyn.qlack2.fuse.aaa.impl.model.QGroup.group;
+import org.ops4j.pax.cdi.api.OsgiServiceProvider;
+
+import com.eurodyn.qlack2.fuse.aaa.api.UserGroupService;
+import com.eurodyn.qlack2.fuse.aaa.api.dto.GroupDTO;
+import com.eurodyn.qlack2.fuse.aaa.api.exception.QInvalidGroupHierarchyException;
+import com.eurodyn.qlack2.fuse.aaa.impl.model.Group;
+import com.eurodyn.qlack2.fuse.aaa.impl.model.User;
+import com.eurodyn.qlack2.fuse.aaa.impl.util.ConverterUtil;
 
 /**
  *
@@ -47,6 +49,9 @@ public class UserGroupServiceImpl implements UserGroupService {
 	@Override
 	public String createGroup(GroupDTO groupDTO) {
 		Group group = new Group();
+		if(groupDTO.getId() != null) {
+			group.setId(groupDTO.getId());
+		}
 		group.setName(groupDTO.getName());
 		group.setDescription(groupDTO.getDescription());
 		group.setObjectId(groupDTO.getObjectID());
