@@ -1,4 +1,0 @@
-com/eurodyn/qlack2/fuse/security/proxy/impl/SecurityProxyImpl.class
-com/eurodyn/qlack2/fuse/security/proxy/impl/util/CleanTicketInterceptor.class
-com/eurodyn/qlack2/fuse/security/proxy/impl/util/ExtractTicketInterceptor.class
-com/eurodyn/qlack2/fuse/security/proxy/impl/util/SecurityExceptionMapper.class

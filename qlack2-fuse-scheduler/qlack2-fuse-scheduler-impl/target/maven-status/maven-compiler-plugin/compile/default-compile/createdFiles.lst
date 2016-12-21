@@ -1,6 +1,0 @@
-com/eurodyn/qlack2/fuse/scheduler/impl/bootstrap/Bootstrap.class
-com/eurodyn/qlack2/fuse/scheduler/impl/SchedulerServiceImpl.class
-com/eurodyn/qlack2/fuse/scheduler/impl/utils/QuartzConverters$1.class
-com/eurodyn/qlack2/fuse/scheduler/impl/SchedulerProvider.class
-com/eurodyn/qlack2/fuse/scheduler/impl/utils/QuartzConverters.class
-com/eurodyn/qlack2/fuse/scheduler/impl/utils/ServiceInvokerJob.class
