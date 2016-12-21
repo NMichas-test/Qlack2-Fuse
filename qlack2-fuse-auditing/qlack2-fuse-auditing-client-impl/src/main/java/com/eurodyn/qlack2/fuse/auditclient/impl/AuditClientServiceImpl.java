@@ -54,10 +54,11 @@ public class AuditClientServiceImpl implements AuditClientService {
 
 	@SuppressWarnings("serial")
 	@Override
-	public void audit(final AuditLogDTO dto) {
+	public String audit(final AuditLogDTO dto) {
+		String auditId = null;
 		if (enabled) {
 			if (synchronous) {
-				auditLoggingService.logAudit(dto);
+				auditId = auditLoggingService.logAudit(dto);
 			} else {
 				eventPublisherService.publishAsync(new HashMap<String, Object>() {
 					{
@@ -66,6 +67,7 @@ public class AuditClientServiceImpl implements AuditClientService {
 				}, Constants.EVENT_ADMIN_TOPIC);
 			}
 		}
+		return auditId;
 	}
 
 	@Override
@@ -82,9 +84,9 @@ public class AuditClientServiceImpl implements AuditClientService {
 		audit(level, event, groupName, description, 
 				sessionID, traceDataStr);
 	}
-	
+
 	@Override
-	public void audit(String level, String event, String groupName, String description,
+	public String audit(String level, String event, String groupName, String description,
 			String sessionID, Object traceData, String referenceId){
 		AuditLogDTO dto = new AuditLogDTO();
 		dto.setLevel(level);
@@ -104,7 +106,7 @@ public class AuditClientServiceImpl implements AuditClientService {
 			}
 			dto.setTraceData(traceDataStr);
 		}
-		audit(dto);
+		return audit(dto);
 	}
 
 	@Override

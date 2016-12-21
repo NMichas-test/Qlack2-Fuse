@@ -85,7 +85,7 @@ public final class ConverterUtil {
 	 * Convert AuditLogDTO DTO to AlAudit model
 	 *
 	 * @param log
-	 * @return AlAudit
+	 * @return Audit
 	 */
 	public static Audit convertToAuditLogModel(AuditLogDTO log) {
 		LOGGER.log(Level.FINEST,
@@ -126,6 +126,7 @@ public final class ConverterUtil {
 			if (null != log.getCreatedOn()) {
 				alLog.setCreatedOn(new Date(log.getCreatedOn()));
 			}
+			alLog.setId(log.getId());
 			alLog.setEvent(log.getEvent());
 			alLog.setPrinSessionId(log.getPrinSessionId());
 			alLog.setShortDescription(log.getShortDescription());

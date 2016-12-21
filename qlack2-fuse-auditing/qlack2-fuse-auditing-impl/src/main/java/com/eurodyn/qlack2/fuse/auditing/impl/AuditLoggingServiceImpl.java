@@ -64,10 +64,11 @@ public class AuditLoggingServiceImpl implements
 	 *            {@inheritDoc}
 	 * @throws QlackFuseALException
 	 *             {@inheritDoc}
+	 * @return
 	 */
 	@Override
 	@Transactional(TxType.REQUIRED)
-	public void logAudit(AuditLogDTO audit) {
+	public String logAudit(AuditLogDTO audit) {
 		LOGGER.log(Level.FINER, "Adding audit ''{0}''.", audit);
 		if (audit.getCreatedOn() == null) {
 			audit.setCreatedOn(new Date());
@@ -78,6 +79,7 @@ public class AuditLoggingServiceImpl implements
 			em.persist(alAudit.getTraceId());
 		}
 		em.persist(alAudit);
+		return alAudit.getId();
 	}
 
 	private <T> CriteriaQuery<T> addPredicate(CriteriaQuery<T> query,

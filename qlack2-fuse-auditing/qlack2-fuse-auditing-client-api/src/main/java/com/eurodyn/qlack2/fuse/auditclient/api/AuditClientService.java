@@ -16,10 +16,10 @@ package com.eurodyn.qlack2.fuse.auditclient.api;
 import com.eurodyn.qlack2.fuse.auditing.api.dto.AuditLogDTO;
 
 public interface AuditClientService {
-	void audit(AuditLogDTO dto);
+	String audit(AuditLogDTO dto);
 	void audit(String level, String event, String groupName, String description,
 			String sessionID, Object traceData);
-	void audit(String level, String event, String groupName, String description,
+	String audit(String level, String event, String groupName, String description,
 			String sessionID, Object traceData, String referenceId);
 	void audit(String level, String event, String groupName, String description,
 			String sessionID, String traceData);

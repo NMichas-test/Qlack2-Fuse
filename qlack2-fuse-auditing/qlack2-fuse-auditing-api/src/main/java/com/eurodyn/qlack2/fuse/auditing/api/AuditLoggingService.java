@@ -33,8 +33,9 @@ public interface AuditLoggingService {
 	 * condition.
 	 *
 	 * @param audit
+	 * @return 
 	 */
-	public void logAudit(AuditLogDTO audit);
+	public String logAudit(AuditLogDTO audit);
 
 	/**
 	 * To delete specific audit log.
